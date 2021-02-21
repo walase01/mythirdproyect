@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App1xamarinforms.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace App1xamarinforms
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new LoginTabbedPage());
         }
 
         protected override void OnStart()
