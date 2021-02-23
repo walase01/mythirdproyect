@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App1xamarinforms.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace App1xamarinforms.Views
         public MainPage()
         {
             InitializeComponent();
+            this.BindingContext = new MainViewModels();
         }
     }
 }
