@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App1xamarinforms.Services;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
@@ -14,17 +15,19 @@ namespace App1xamarinforms.ViewModels
 
         public ICommand LoginCommand { get; }
 
-        public MainViewModels()
+        private InterfaceAlertServices AlertServices;
+
+        public MainViewModels(InterfaceAlertServices alertServices)
         {
             LoginCommand = new Command(StartLogin);
+            AlertServices = alertServices;
         }
-
-
-        private void StartLogin()
+   
+        async private void StartLogin()
         {
             if (!string.IsNullOrEmpty(Name.ToString()) || (!String.IsNullOrEmpty(Password.ToString())))
             {
-
+               await AlertServices.AlertAsync(Name.ToString());
             }
         }
     }
