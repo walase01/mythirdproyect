@@ -10,7 +10,6 @@ namespace App1xamarinforms
         public App()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new LoginTabbedPage());
         }
 

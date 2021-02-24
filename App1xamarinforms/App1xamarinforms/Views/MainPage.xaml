@@ -9,7 +9,7 @@
             <Editor Grid.Column="0" Grid.Row="1" Placeholder="Email" Text="{Binding Name}"/>
             <Entry Grid.Column="0" Grid.Row="2" Placeholder="Password" IsPassword="True" Text="{Binding Password}"/>
             <Button Grid.Column="0" Grid.Row="3" BackgroundColor="Red" TextColor="White" Text="Login" Command="{Binding LoginCommand}"/>
-            <Label Grid.Column="0" Grid.Row="4" Text="Register"  TextColor="Red" HorizontalOptions="Center"/>
+            <Button Grid.Column="0" Grid.Row="4" Text="Register"  Command="{Binding RegisterCommand}" TextColor="Red" HorizontalOptions="Center" BackgroundColor="Transparent"/>
 
         </Grid>
     </ScrollView>

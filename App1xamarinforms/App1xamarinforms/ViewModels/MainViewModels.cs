@@ -9,26 +9,41 @@ namespace App1xamarinforms.ViewModels
 {
     public class MainViewModels
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = null;
 
-        public string Password { get; set; }
+        public string Password { get; set; } = null;
+
+        public ICommand RegisterCommand { get; } 
 
         public ICommand LoginCommand { get; }
 
         private InterfaceAlertServices AlertServices;
+             
 
         public MainViewModels(InterfaceAlertServices alertServices)
         {
             LoginCommand = new Command(StartLogin);
+            RegisterCommand = new Command(EnterRegister);
             AlertServices = alertServices;
         }
    
         async private void StartLogin()
         {
-            if (!string.IsNullOrEmpty(Name.ToString()) || (!String.IsNullOrEmpty(Password.ToString())))
+            if (!string.IsNullOrEmpty(Name.ToString()) || (!string.IsNullOrEmpty(Password.ToString())))
             {
                await AlertServices.AlertAsync(Name.ToString());
             }
+            else
+            {
+                await AlertServices.AlartEmpty();
+            }
         }
+
+        async private void EnterRegister()
+        {
+            await AlertServices.NavegationRegister();
+        }
+
+
     }
 }
