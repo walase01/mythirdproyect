@@ -15,6 +15,7 @@ namespace App1xamarinforms.Views
         public HomeDiscoveryPage()
         {
             InitializeComponent();
+            //CurrentPage = new HomeDiscoveryPage();
         }
     }
 }

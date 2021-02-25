@@ -6,7 +6,13 @@ namespace App1xamarinforms.Models
 {
     public class MenuOption
     {
-        public string title { get; set; }
-        public string image { get; set; }
+        public string Title { get; set; }
+        public string Image { get; set; }
+
+        //public MenuOption(string title, string image)
+        //{
+        //    this.Title = title;
+        //    this.Image = image;
+        //}
     }
 }

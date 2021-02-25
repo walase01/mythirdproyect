@@ -1,4 +1,6 @@
-﻿using System;
+﻿using App1xamarinforms.Services;
+using App1xamarinforms.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +17,7 @@ namespace App1xamarinforms.Views
         public HomeTabbedPage()
         {
             InitializeComponent();
-            this.CurrentPage = new HomeDiscoveryPage();
+            this.BindingContext = new HomeTabbedPage();
         }
     }
 }
