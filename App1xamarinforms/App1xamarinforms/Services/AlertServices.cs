@@ -33,6 +33,11 @@ namespace App1xamarinforms.Services
             return App.Current.MainPage.DisplayAlert("Error","Los compos estan vacios","Ok");
         }
 
+        public Task NavegationHome()
+        {
+            return App.Current.MainPage.Navigation.PushAsync(new HomeTabbedPage());
+        }
+
         public Task NavegationRegister()
         {
             return App.Current.MainPage.Navigation.PushAsync(new RegisterPage());

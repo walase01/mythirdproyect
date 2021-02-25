@@ -32,6 +32,7 @@ namespace App1xamarinforms.ViewModels
             if (!string.IsNullOrEmpty(Name.ToString()) || (!string.IsNullOrEmpty(Password.ToString())))
             {
                await AlertServices.AlertAsync(Name.ToString());
+                await AlertServices.NavegationHome();
             }
             else
             {

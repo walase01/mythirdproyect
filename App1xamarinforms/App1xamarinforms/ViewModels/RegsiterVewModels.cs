@@ -31,6 +31,7 @@ namespace App1xamarinforms.ViewModels
                 if (string.Equals(Password, ConfirmPassword))
                 {
                     await interfaceAlert.AlertEmpyRegister(Name);
+                    await interfaceAlert.NavegationHome();
                 }
                 else
                 {

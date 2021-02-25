@@ -17,5 +17,7 @@ namespace App1xamarinforms.Services
         Task AlertPassword();
 
         Task ConfirmEmpty();
+
+        Task NavegationHome();
     }
 }
