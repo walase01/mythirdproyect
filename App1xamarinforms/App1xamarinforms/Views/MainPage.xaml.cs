@@ -15,7 +15,7 @@ namespace App1xamarinforms.Views
         public MainPage()
         {
             InitializeComponent();
-            //this.BindingContext = new MainViewModels(new AlertServices());
+            
         }
     }
 }

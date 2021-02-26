@@ -11,7 +11,7 @@ namespace App1xamarinforms.ViewModels
         public HomeViewModels()
         {
             BarAndHotelsMenuOption.Title = "Bar and Hotels";
-            BarAndHotelsMenuOption.Image = "Bar";
+            BarAndHotelsMenuOption.Image = "beer";
         }
     }
 }

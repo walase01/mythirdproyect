@@ -8,11 +8,16 @@
         <Grid Padding="10" BackgroundColor="AntiqueWhite" ColumnDefinitions="*,*" RowDefinitions="*,*,*">
             
             <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="White">
-                <Label Text="{Binding MenuOption.Title}" HorizontalOptions="Center"/>
+                
+                <Image Source="{Binding  BarAndHotelsMenuOption.Image}" HorizontalOptions="Center"/>
+                <Label Text="{Binding BarAndHotelsMenuOption.Title}" HorizontalOptions="Center" BindingContext="Body"/>
+                <Label Text="42 place" />
             </StackLayout>
+            
             <StackLayout Grid.Column="1" Grid.Row="0" BackgroundColor="White">
 
             </StackLayout>
+            
             <StackLayout Grid.Column="0" Grid.Row="1" BackgroundColor="White">
 
             </StackLayout>

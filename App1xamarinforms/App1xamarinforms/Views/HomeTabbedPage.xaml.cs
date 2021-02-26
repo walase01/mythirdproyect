@@ -17,7 +17,7 @@ namespace App1xamarinforms.Views
         public HomeTabbedPage()
         {
             InitializeComponent();
-            this.BindingContext = new HomeTabbedPage();
+            this.BindingContext = new HomeViewModels();
         }
     }
 }
