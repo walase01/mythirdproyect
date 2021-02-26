@@ -2,7 +2,8 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:MainLogin="clr-namespace:App1xamarinforms.Views"
-             x:Class="App1xamarinforms.Views.LoginTabbedPage">
+             x:Class="App1xamarinforms.Views.LoginTabbedPage"
+            Title="Login">
   <!--Pages can be added as references or inline-->
      <MainLogin:MainPage Title="Login" IconImageSource="Login2"/>
     <ContentPage Title="Home" IconImageSource="home" />
