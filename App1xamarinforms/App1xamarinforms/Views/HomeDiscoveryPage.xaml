@@ -5,29 +5,48 @@
 
     <ScrollView>
 
-        <Grid Padding="10" BackgroundColor="AntiqueWhite" ColumnDefinitions="*,*" RowDefinitions="*,*,*">
+        <Grid Padding="10" BackgroundColor="AntiqueWhite" ColumnDefinitions="*,*" RowDefinitions="auto,auto,auto">
             
-            <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="White">
+            <StackLayout Margin="5" Grid.Column="0" Grid.Row="0" BackgroundColor="White">
                 
-                <Image Source="{Binding  BarAndHotelsMenuOption.Image}" HorizontalOptions="Center"/>
-                <Label Text="{Binding BarAndHotelsMenuOption.Title}" HorizontalOptions="Center" BindingContext="Body"/>
-                <Label Text="42 place" />
+                <Image Source="{Binding  BarAndHotelsMenuOption.Image}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="{Binding BarAndHotelsMenuOption.Title}" HorizontalOptions="Center" TextColor="Black"/>
+                <Label Text="42 place" HorizontalOptions="Center" />
+                
             </StackLayout>
-            
-            <StackLayout Grid.Column="1" Grid.Row="0" BackgroundColor="White">
+
+            <StackLayout Margin="5" Grid.Column="1" Grid.Row="0" BackgroundColor="White">
+
+                <Image Source="{Binding FineDining.Image}" HorizontalOptions="Center" />
+                <Label Text="{Binding FineDining.Title}" TextColor="Black" HorizontalOptions="Center"/>
+                <Label Text="15 place" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Margin="5" Grid.Column="0" Grid.Row="1" BackgroundColor="White">
+
+                <Image Source="{Binding Cafes.Image}" HorizontalOptions="Center"/>
+                <Label Text="{Binding Cafes.Title}" TextColor="Black" HorizontalOptions="Center"/>
+                <Label Text="28 place" HorizontalOptions="Center"/>
 
             </StackLayout>
-            
-            <StackLayout Grid.Column="0" Grid.Row="1" BackgroundColor="White">
+            <StackLayout Margin="5" Grid.Column="1" Grid.Row="1" BackgroundColor="White">
+
+                <Image Source="{Binding Nearby.Image}" HorizontalOptions="Center"/>
+                <Label Text="{Binding Nearby.Title}" HorizontalOptions="Center" TextColor="Black"/>
+                <Label Text="34 place" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Margin="5" Grid.Column="0" Grid.Row="2" BackgroundColor="White">
+
+                <Image Source="{Binding FastFood.Image}" HorizontalOptions="Center"/>
+                <Label Text="{Binding FastFood.Title}" HorizontalOptions="Center" TextColor="Black"/>
+                <Label Text="29 place" HorizontalOptions="Center"/>
 
             </StackLayout>
-            <StackLayout Grid.Column="1" Grid.Row="1" BackgroundColor="White">
+            <StackLayout Margin="5" Grid.Column="1" Grid.Row="2" BackgroundColor="White">
 
-            </StackLayout>
-            <StackLayout Grid.Column="0" Grid.Row="2" BackgroundColor="White">
-
-            </StackLayout>
-            <StackLayout Grid.Column="1" Grid.Row="2" BackgroundColor="White">
+                <Image Source="{Binding FeaturedFoods.Image}" HorizontalOptions="Center" />
+                <Label Text="{Binding FeaturedFoods.Title}" HorizontalOptions="Center" TextColor="Black"/>
+                <Label Text="21 Place" HorizontalOptions="Center"/>
 
             </StackLayout>
         </Grid>
