@@ -29,7 +29,7 @@
                 <Label Text="28 place" HorizontalOptions="Center"/>
 
             </StackLayout>
-            <StackLayout Margin="5" Grid.Column="1" Grid.Row="1" BackgroundColor="White">
+            <StackLayout Margin="5" Grid.Column="1" Grid.Row="1" BackgroundColor="Yellow">
 
                 <Image Source="{Binding Nearby.Image}" HorizontalOptions="Center"/>
                 <Label Text="{Binding Nearby.Title}" HorizontalOptions="Center" TextColor="Black"/>

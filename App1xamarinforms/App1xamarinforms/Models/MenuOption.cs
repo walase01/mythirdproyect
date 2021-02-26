@@ -9,10 +9,5 @@ namespace App1xamarinforms.Models
         public string Title { get; set; }
         public string Image { get; set; }
 
-        //public MenuOption(string title, string image)
-        //{
-        //    this.Title = title;
-        //    this.Image = image;
-        //}
     }
 }

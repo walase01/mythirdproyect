@@ -133,4 +133,43 @@
       <Name>App1xamarinforms</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\beer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cafe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fastfood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Intec.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Login2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nearby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pizzaslice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\serving.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\user.png" />
+  </ItemGroup>
 </Project>

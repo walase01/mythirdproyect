@@ -9,9 +9,9 @@ namespace App1xamarinforms.ViewModels
 {
     public class MainViewModels
     {
-        public string Name { get; set; } = null;
-
-        public string Password { get; set; } = null;
+        public string Name { get; set; } = "";
+        
+        public string Password { get; set; } = "";
 
         public ICommand RegisterCommand { get; } 
 
@@ -44,7 +44,6 @@ namespace App1xamarinforms.ViewModels
         {
             await AlertServices.NavegationRegister();
         }
-
 
     }
 }

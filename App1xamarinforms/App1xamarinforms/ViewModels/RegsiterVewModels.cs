@@ -10,11 +10,11 @@ namespace App1xamarinforms.ViewModels
 
     public class RegsiterVewModels
     {
-        public string Name { get; set; } = null;
-        public string Email { get; set; } = null;
-        public string Password { get; set; } = null;
-        public string ConfirmPassword { get; set; } = null;
-        public ICommand LoginCommand { get; } = null;
+        public string Name { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string Password { get; set; } = "";
+        public string ConfirmPassword { get; set; } = "";
+        public ICommand LoginCommand { get; }
 
         private InterfaceAlertServices interfaceAlert;
 
